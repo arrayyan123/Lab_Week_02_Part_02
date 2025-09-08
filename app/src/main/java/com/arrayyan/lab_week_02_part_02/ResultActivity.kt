@@ -38,5 +38,9 @@ class ResultActivity : AppCompatActivity() {
             resultMessage.text = getString(R.string.color_code_result_message,
                 colorCode?.uppercase())
         }
+        val backButton = findViewById<Button>(R.id.back_button)
+        backButton.setOnClickListener {
+            finish()
+        }
     }
 }
